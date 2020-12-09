@@ -1,0 +1,292 @@
+
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/*Hearder-menu*/
+
+.navbar-brand{
+	font-weight: bold;
+}
+.mobile{
+	background: #647adf;
+	height: 42px;
+	width: 37px;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	font-size: 28px;
+	border-radius: 5px;
+}
+
+/*Slider Section*/
+
+.slider-section{
+    background: url(img/mbr-10.jpg) no-repeat center center;
+    padding: 130px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    z-index: -1;
+}
+.item-left .text{
+    padding: 12px 30px;
+    border: 1px solid #5ba533;
+    border-radius: 5px;
+}
+.item-left .text:hover{
+    box-shadow: 4.3px 4.3px 20px 0 rgba(100, 122, 223.7);
+    border: 1px solid rgba(100, 122, 223.7) ;
+}
+.item-right button{
+    padding: 8px 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.item-right button:hover{
+    box-shadow: 4.3px 4.3px 20px 0 rgba(100, 122, 223.7);
+    border: 1px solid rgba(100, 122, 223.7);
+    background: white;
+    color: rgba(100, 122, 223.7);
+    font-weight: 600;
+}
+
+/*About-section*/
+
+.about-section{
+    background: #eef1fc;
+}
+.about-left{
+    margin-top: 130px;
+}
+.lead{
+    width: 85%;
+}
+
+/*learn-more Part*/
+
+.futuar{
+    height: 220px;
+}
+.futuar:hover{
+    box-shadow: 2px 2px 10px 0 rgba(100, 122, 223.2) ;
+}
+.learn-left{
+    width: 50%;
+    overflow: hidden;
+}
+.learn-left img{
+    height: 103%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    top: -5px;
+    left: -100px;
+}
+.learn-right{
+    width: 50%;
+    padding: 15px;
+}
+
+/*Galary Section Part*/
+
+.showimg a{
+    position: relative;
+    display: block; 
+}
+.showimg a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(98, 120, 223,.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.showimg:hover a::after{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Prize Listing*/
+
+.prize-list{
+    background: #f7f9ff;
+}
+.bat{
+    padding-bottom: 30px;
+}
+
+/*Feedback Part*/
+
+.quote{
+    color: rgba(0,0,0,.1);
+}
+.logog{
+    width: 60px;
+    text-align: right;
+    position: relative;
+    left: 150px;
+}
+.people-text{
+    text-align: left;
+    position: relative;
+    left: 100px;
+    left: 160px;
+}
+.people{
+    margin-top: 40px;
+    position: relative;
+    left: 30px;
+}
+
+/*team-member*/
+
+.team-member{
+    background: #f7f9ff;
+}
+.pragraph{
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.team-img{
+    width: 120px;
+    position: relative;
+    top:50px;
+    left: 15px;
+    z-index: 1;
+}
+
+/*Footer top Part*/
+
+.fotter-top{
+    background: #f7f9ff;
+}
+
+
+
+/*Responsive Part*/
+/*Responsive Css*/
+
+@media (max-width:992px) {
+
+    .item-right button {
+        padding: 9px 21px;
+        font-size: 20px;
+    }
+    .text {
+        max-width: 100%;
+    }
+    .btn.btn-success.btn-block {
+        max-width: 100%;
+    }
+    .about-left {
+        margin-top: 0px;
+    }
+    .mb-4.display-4.font-weight-normal {
+        font-size: 2.2rem;
+    }
+    .lead {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .h1, h1 {
+        font-size: calc(1.11rem + 1.5vw);
+    }
+    .content-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:768px){
+
+    .h1, h1 {
+        font-size: calc(1rem + 1.5vw);
+    }
+    .lead {
+        font-size: 1rem;
+    }
+    .mt-4 {
+        margin-top: -15px !important;
+    }
+    .mb-4 {
+        margin-bottom: 2rem !important;
+    }
+    .small, small {
+        font-size: .75em;
+    }
+    .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+    .mb-3 {
+        margin-bottom: 1rem !important;
+    }
+    .h1, h1 {
+        font-size: calc(.8rem + 1.5vw);
+    }
+    .content-text {
+        font-size: 25px;
+    }
+    .footer-top-text{
+        font-size: 25px;
+    }
+    .mb-4 {
+        font-size: 18px;
+    }
+    .mb-5.display-5.font-weight-bold {
+        font-size: 33px;
+    }
+    .btn.btn-success.btn-block {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width:576px){
+
+    .font-weight-bold {
+        font-weight: 600 !important;
+    }
+    .h1, h1 {
+        font-size: 25px;
+    }
+    .lead.mt-5 {
+        margin-top: 1.5rem !important;
+    }
+    .lead {
+        font-size: 1.15rem;
+    }
+    .people.w-50.mx-auto {
+        left: -110px;
+    }
+    .h1, h1 {
+        font-size: calc(.7rem + 1.5vw) !important;
+    }
+    .borderbottom{
+        border-bottom: 1px solid #ddd;
+    }
+    .content-text {
+        font-size: 20px;
+    }
+    .footer-top-text{
+        font-size: 20px;
+    }
+    .footer-bt-text {
+        font-size: 11px;
+    }
+}
